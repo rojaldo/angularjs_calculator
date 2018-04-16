@@ -1,0 +1,29 @@
+<div class="component">
+  <h2>{{$ctrl.display}}</h2>
+  <table>
+    <tr>
+      <th><button ng-click="$ctrl.processNumber(7)">7</button></th>
+      <th><button ng-click="$ctrl.processNumber(8)">8</button></th> 
+      <th><button ng-click="$ctrl.processNumber(9)">9</button></th>
+      <th><button ng-click="$ctrl.processSymbol('/')">/</button></th>
+    </tr>
+    <tr>
+      <th><button ng-click="$ctrl.processNumber(4)">4</button></th>
+      <th><button ng-click="$ctrl.processNumber(5)">5</button></th> 
+      <th><button ng-click="$ctrl.processNumber(6)">6</button></th>
+      <th><button ng-click="$ctrl.processSymbol('*')">*</button></th>
+    </tr>
+    <tr>
+      <th><button ng-click="$ctrl.processNumber(1)">1</button></th>
+      <th><button ng-click="$ctrl.processNumber(2)">2</button></th> 
+      <th><button ng-click="$ctrl.processNumber(3)">3</button></th>
+      <th><button ng-click="$ctrl.processSymbol('-')">-</button></th>
+    </tr>
+    <tr>
+      <th><button ng-click="$ctrl.processSymbol('.')">.</button></th>
+      <th><button ng-click="$ctrl.processNumber(0)">0</button></th> 
+      <th><button ng-click="$ctrl.processSymbol('=')">=</button></th>
+      <th><button ng-click="$ctrl.processSymbol('+')">+</button></th>
+    </tr>
+  </table>
+</div>
