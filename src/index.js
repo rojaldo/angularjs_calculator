@@ -11,4 +11,6 @@ export const app = 'app';
 angular
   .module(app, [])
   .component('app', hello)
-  .component('myComponent', myComponent);
+  .component('myCalculator', myComponent);
+
+  myComponent.$inject = ['$http','$log'];
