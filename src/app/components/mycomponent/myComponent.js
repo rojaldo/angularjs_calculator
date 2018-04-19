@@ -1,11 +1,14 @@
 class MyComponentController {
 
-  constructor() {
-
+  constructor($log) {
+    this.$log = $log;
+    this.blank=true;
+    this.display = '';
   }
 
 
   processNumber(value) {
+    this.$log.log('processNumber');
     if (this.blank === true) {
       this.numberentering = true;
       this.blank = false;
